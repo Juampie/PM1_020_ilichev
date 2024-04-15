@@ -1,0 +1,34 @@
+﻿<Page x:Class="PM1_020_ilichev.Pages.OrganizProfil"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PM1_020_ilichev.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="OrganizProfil">
+
+    <Grid Background="White">
+
+        <StackPanel Margin="10,108,701,10">
+            <Label Content="ФИО:" HorizontalAlignment="Right"/>
+            <Label Content="Пол:" HorizontalAlignment="Right"/>
+            <Label Content="Дата рождения:" HorizontalAlignment="Right"/>
+            <Label Content="ID Numder:" HorizontalAlignment="Right"/>
+            <Label Content="Страна:" HorizontalAlignment="Right"/>
+            <Label Content="Телефон:" HorizontalAlignment="Right"/>
+            <Label Content="Email:" HorizontalAlignment="Right"/>
+        </StackPanel>
+        <Label Content="Мой профиль" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" FontSize="32"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="593,292,0,0" VerticalAlignment="Top"/>
+        <Label Content="Повтор пароля" HorizontalAlignment="Left" Margin="550,322,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="649,296,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="649,326,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <CheckBox Content="Смена пароля" HorizontalAlignment="Left" Margin="656,268,0,0" VerticalAlignment="Top" />
+        <CheckBox Content="Видимый пароль" HorizontalAlignment="Left" Margin="656,362,0,0" VerticalAlignment="Top" />
+        <Image HorizontalAlignment="Left" Height="90" Margin="656,108,0,0" VerticalAlignment="Top" Width="100" Source="/PM1_020_ilichev;component/organizers/foto1.jpg"/>
+        <Button Content="ОК" HorizontalAlignment="Left" Margin="606,416,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="отмна" HorizontalAlignment="Left" Margin="701,416,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Page>

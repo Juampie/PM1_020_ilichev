@@ -1,0 +1,49 @@
+﻿<Page x:Class="PM1_020_ilichev.Pages.Auto"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PM1_020_ilichev.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Auto">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="64"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="96*"/>
+            <ColumnDefinition Width="257*"/>
+            <ColumnDefinition Width="447*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Логин" HorizontalAlignment="Right" Margin="0,0,134,225" Grid.Row="1" VerticalAlignment="Bottom" FontSize="36" Height="58" Width="112" Grid.Column="1"/>
+        <Label Content="Пароль" Margin="0,0,112,144" Grid.Row="1" VerticalAlignment="Bottom" FontSize="36" HorizontalAlignment="Right" Width="134" Height="58" Grid.Column="1"/>
+        <TextBox x:Name="_login" Grid.Column="2" HorizontalAlignment="Right" Height="50" Margin="0,0,92,217" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="310" FontSize="34" ToolTip="Логин" TextChanged="_login_TextChanged"/>
+        <PasswordBox x:Name="_password" Grid.Column="2" HorizontalAlignment="Right" Margin="0,0,92,144" Grid.Row="1" VerticalAlignment="Bottom" Width="310" Height="52" ToolTip="Пароль" PasswordChanged="_password_PasswordChanged"/>
+        <Button Content="Вход" Grid.Column="2" HorizontalAlignment="Right" Margin="0,0,234,86" Grid.Row="1" VerticalAlignment="Bottom" Width="168" Height="37" Click="Button_Click" />
+        <TextBlock x:Name="_loginPH" Grid.Column="2" HorizontalAlignment="Right" Margin="0,0,109,225" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="42" Width="247" FontSize="32" Foreground="#4C000000" IsEnabled="False"><Run Text="Логин или"/><Run Text=" почта"/></TextBlock>
+        <TextBlock x:Name="_password_PH" Grid.Column="2" HorizontalAlignment="Right" Margin="0,0,234,151" Grid.Row="1" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Bottom" Height="42" Width="122" FontSize="32" Foreground="#4C000000" IsEnabled="False"/>
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" />
+
+
+        <Grid Grid.Row="2" Margin="0,10,0,0">
+            
+            <Canvas HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="96">
+                <Ellipse Name="A"  Width="50" Height="50" Fill="#33008000"  />
+                
+                <Ellipse Name="B" Canvas.Left="12" Width="50" Height="50" Fill="#33008000"  />
+                <Ellipse Name="C" Canvas.Left="30" Width="50" Height="50" Fill="#33008000"  />
+                <Label Content="ACVqwqfew" />
+            </Canvas>
+            
+
+
+
+
+
+        </Grid>
+    </Grid>
+</Page>
